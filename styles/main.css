@@ -1,0 +1,163 @@
+/*
+blue : ActiveBorder
+beige: #F5DEB3
+*/
+
+#fixedtop {
+  z-index:1;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Space Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Mono', monospace;
+  color : black;
+  text-align: center;
+}
+
+a {
+  color : RoyalBlue;
+  transition: all 0.6s;
+}
+
+a:hover {
+  color : RoyalBlue;
+  background: white;
+  font-weight: bold
+}
+
+
+header {
+  min-height: 80vh;
+  background-image: url('images/4.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  max-width: 100%;
+}
+
+section {
+
+}
+
+.header-content-block {
+  background: white;
+  text-align: center;
+  font-size: 0.5em;
+  padding: 8px;
+  justify-content: center;
+
+}
+
+.header-content-block h1 {
+  font-size: 4.25em;
+}
+
+#bio {
+}
+
+#bio h1 {
+  display: none;
+}
+
+.bio-content-block {
+ max-width: 960px;
+  margin: 0 auto;
+  columns: 2;
+  column-gap: 4rem;
+  text-align: justify;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+#comp {
+  background-color: #F5DEB3;
+  color : white;
+}
+
+.comp-section-content {
+ display: flex;
+ justify-content: space-around;
+}
+
+.comp-content {
+margin : 20px;
+  width : auto;
+  background-color: ActiveBorder;
+
+}
+
+.comp-content p {
+padding: 1em;
+
+}
+
+.comp-content img {
+  width : 100%;
+}
+
+.comp-content a {
+display: block;
+  padding : 1em;
+  float: right;
+}
+
+img{
+  width: 320px;
+  	height: 320px;
+    max-width: 100%;
+	height: auto;
+}
+
+#portfolio {
+
+}
+
+.portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: first baseline;
+  align-items: safe center;
+}
+
+
+.portfolio-content-item {
+  max-width: 480px;
+  margin : 20px;
+  position : relative;
+}
+
+.portfolio-content-item:hover{
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.portfolio-content-item h2 {
+position: absolute;
+  top : 50%;
+  left : 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.portfolio-content-item img {
+  width : 100%;
+}
+
+footer {
+
+}

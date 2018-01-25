@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>This my web page</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script type="text/javascript">
+     // allocate the function to the window scrolling
+     window.onscroll = fixedTop;
+
+     var startingY = false;
+
+     function fixedTop() {
+
+         // First top value recovery
+         if (!startingY) startingY = parseInt(document.getElementById("fixedtop").style.top);
+
+         // Scroll top value
+         if (window.pageYOffset) {
+             var yrt = window.pageYOffset;
+         } else if (document.body.scrollTop){
+             var yrt = document.body.scrollTop;
+         } else {
+             var yrt = document.documentElement.scrollTop;
+         }
+
+         document.getElementById("fixedtop").style.top = (yrt + startingY)+ "px";
+     }
+  </script>
+
+
+  </head>
+  <body>
+
+    <header>
+
+  <div id="fixedtop" style="position:absolute;top:0; width: 100%; height: 35px; background:white; padding-left:10px;">
+  Say hello
+<a href="mailto:letibrun@gmail.com"><img src="images/ok16.png" alt="google" style="border:none; width:30px"></a>
+  <a href="https://www.instagram.com/ouchlaetitia/?hl=fr"><img src="images/ok14.png" alt="google" style="border:none; width:20px"></a>
+  <a href="https://www.behance.net/laetitiab00de9"><img src="images/ok13.png" alt="google" style="border:none; width:25px"></a>
+  <a href="mailto:letibrun@.com"></a>
+
+  </div>
+
+
+      <div class="header-content-block">
+        <h1>Laetitia Brun</h1>
+        <p>I am a futur DA from Marseille</p>
+      </div>
+
+
+    </header>
+
+
+<section>
+      <section id="bio">
+      <h1>Biography</h1>
+      <div class="bio-content-block">
+        <p>
+        My name is Laetitia Brun, I am currently a second year student of graphic design at the Bordeaux ECV in France. I contact you because I am very interested by your work in visual identity and fashion design. I am looking for an internship in fashion for having a master degree in a fashion school. I am comfortable with Mac OSX as well as Windows. In addition, I have indepth following : Adobe Photoshop, Adobe Illustrator, Adobe Indesign, and Adobe Acrobat Professional. I am a team player to the core, but am also at complete ease when working alone.
+        </p>
+        <p>
+        My name is Laetitia Brun, I am currently a second year student of graphic design at the Bordeaux ECV in France. I contact you because I am very interested by your work in visual identity and fashion design. I am looking for an internship in fashion for having a master degree in a fashion school. I am comfortable with Mac OSX as well as Windows. In addition, I have indepth following : Adobe Photoshop, Adobe Illustrator, Adobe Indesign, and Adobe Acrobat Professional. I am a team player to the core, but am also at complete ease when working alone.
+        </p>
+      </div>
+    </section>
+
+    <section id="comp">
+        <h1>Compétences</h1>
+          <div class="comp-section-content">
+          <div class="comp-content">
+            <img src="images/ok1.jpg" alt="">
+            <h2>Identité visuelle</h2>
+            <p>L'identité visuelle a pour objectifs de permettre la reconnaissance de la marque, de véhiculer ses valeurs et de conforter son image de marque. J'aimerai plus tard travailler autour de cette notion de marque, d'identité dans la mode.</p>
+            <a href="#">Read More</a>
+          </div>
+          <div class="comp-content">
+            <img src="images/ok2.jpg" alt="">
+            <h2>Illustration</h2>
+            <p>J'aime l'illustration, colorée, sensible, impactante. J’aime tester, expérimenter, rechercher et donc ne pas me cantonner à un style illustratif précis.</p>
+            <a href="#">Read More</a>
+          </div>
+          <div class="comp-content">
+            <img src="images/ok3.jpg" alt="">
+            <h2>Typographie</h2>
+            <p>Présente dans l'édition, l'identité, elle est le centre du design graphisme et constitut l'un des piliers sur lesquels je veux me consacrer en master</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+      <h1>Mon Portfolio</h1>
+      <div class="portfolio-content">
+          <div class="portfolio-content-item">
+            <img src="images/ok9.jpg" alt="This is a protfolio item">
+            <h2><a href="#">Pastel</a></h2>
+          </div>
+          <div class="portfolio-content-item">
+            <img src="images/ok6.jpg" alt="This is a protfolio item">
+            <h2><a href="#">Poster</a></h2>
+          </div>
+          <div class="portfolio-content-item">
+            <img src="images/ok7.jpg" alt="This is a protfolio item">
+            <h2><a href="#">Vinyle</a></h2>
+          </div>
+          <div class="portfolio-content-item">
+            <img src="images/ok8.jpg" alt="This is a protfolio item">
+            <h2><a href="#">Identité visuelle</a></h2>
+          </div>
+          <div class="portfolio-content-item">
+            <img src="images/type.png" alt="This is a protfolio item">
+            <h2><a href="#">Typographie</a></h2>
+          </div>
+          <div class="portfolio-content-item">
+            <img src="images/ok10.jpg" alt="This is a protfolio item">
+            <h2><a href="#">Illustration</a></h2>
+          </div>
+      </div>
+
+    </section>
+
+  </body>
+</html>
